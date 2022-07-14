@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: #ddd;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0px auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.container #cronometro {
+  color: #666666;
+  font-size: 40px;
+}
+
+.container #actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+#actions button {
+  max-width: 200px;
+  width: 33.33%;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+#actions #start {
+  background: rgb(44, 128, 41);
+}
+
+#actions #start:hover {
+  transition: 1s;
+  background: rgb(61, 107, 59);
+}
+
+#actions #stop {
+
+  background: rgb(250, 38, 38);
+}
+
+#actions #stop:hover {
+  transition: 1s;
+  background: rgb(170, 27, 27);
+}
+
+#actions #reset {
+  background: rgb(240, 146, 39);
+}
+
+#actions #reset:hover {
+  transition: 1s;
+  background: rgb(177, 108, 29);
+}
+
+@media (max-width:640px) {
+  #actions {
+    flex-direction: column;
+  }
+
+  #actions button {
+    max-width: 300px;
+    width: 100%;
+  }
+}
